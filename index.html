@@ -45,6 +45,23 @@
   .card h3{margin:0 0 6px;font-size:17px;color:var(--navy)}
   .card p{margin:0;color:var(--muted);font-size:15px}
   .pairing{margin-top:22px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:10px;padding:14px 18px;color:var(--ink)}
+  /* Preview */
+  .preview-center{text-align:center}
+  .preview-center .section-sub{margin-left:auto;margin-right:auto}
+  .phone-frame{position:relative;max-width:300px;margin:6px auto 0;background:#101E33;border-radius:52px;padding:12px;box-shadow:0 18px 44px rgba(36,58,94,.28)}
+  .phone-frame::before{content:"";position:absolute;top:12px;left:50%;transform:translateX(-50%);width:96px;height:26px;background:#101E33;border-radius:0 0 16px 16px;z-index:2}
+  .phone-frame video{width:100%;display:block;border-radius:42px;background:#000}
+  .preview-note{color:var(--muted);font-size:14px;margin-top:14px}
+  /* About */
+  .about p{max-width:70ch}
+  .facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .fact{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;color:var(--navy)}
+  /* Guidance callout */
+  .guidance{background:var(--sand);border:1px solid #D9CFBE;border-left:5px solid var(--gold);border-radius:12px;padding:24px 26px}
+  .guidance h2{margin-bottom:10px}
+  .guidance p{max-width:72ch;margin:0 0 12px}
+  .guidance p:last-child{margin-bottom:0}
+  .guidance .pro-note{font-weight:700;color:var(--navy)}
   /* Screenshots */
   .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px}
   figure{margin:0;text-align:center}
@@ -86,7 +103,9 @@
       Paws &amp; Harmony
     </div>
     <nav class="navlinks">
+      <a href="#preview">See the app</a>
       <a href="#how">How it works</a>
+      <a href="#about">About</a>
       <a href="#shelters">For shelters</a>
       <a href="#support">Support</a>
       <a href="privacy.html">Privacy</a>
@@ -110,6 +129,17 @@
 </div>
 
 <main class="wrap">
+
+  <section id="preview">
+    <div class="preview-center">
+      <h2>See the app</h2>
+      <p class="section-sub">A quick look at the five screens an adopter uses each day — Home, Check-In, Coach, Pets, and Progress.</p>
+      <div class="phone-frame">
+        <video src="assets/preview.mp4" poster="assets/01-home.png" autoplay muted loop playsinline controls preload="metadata" aria-label="Preview video of the Paws &amp; Harmony app screens"></video>
+      </div>
+      <p class="preview-note">Silent preview &middot; about 20 seconds</p>
+    </div>
+  </section>
 
   <section id="how">
     <h2>How it works</h2>
@@ -137,6 +167,31 @@
       </div>
     </div>
     <div class="pairing"><strong>Works for any pairing:</strong> cat-to-cat, dog-to-dog, or the classic dog-meets-cat. Every pair follows the same calm daily rhythm.</div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Paws &amp; Harmony</h2>
+    <p>Paws &amp; Harmony is a daily companion for one specific, often stressful stretch of pet ownership: the <strong>introduction period</strong>, when a new animal joins a home that already has pets. Instead of advice scattered across forums and guesswork, it gives that period a calm, steady structure.</p>
+    <p>It's made for adopters bringing a new dog or cat home to resident pets — and for foster caregivers, whose introductions happen again and again, sometimes with just a few weeks to get each one right.</p>
+    <p>Each day follows a light rhythm. In the morning, the app shows where you are in the introduction and what today's focus is. In the evening, a two-minute check-in asks how it actually went: a stress rating from 1 to 5, any incidents worth noting — hissing, barking, chasing, hiding — and how many minutes the pets calmly shared the same space. Calm days build into streaks, and milestones mark the moments worth celebrating: the first relaxed meal side by side, the first nap in the same room.</p>
+    <p>The Coach follows the staged approach behavior professionals recommend, always at the pets' pace: <strong>scent introduction</strong> first, then <strong>visual contact</strong>, then <strong>supervised interaction</strong>, and finally <strong>extended togetherness</strong>. Its guidance adjusts to the stage you're in and how your recent check-ins are trending — no rushing, and no shame in stepping back a stage when the pets ask for it.</p>
+    <p>Paws &amp; Harmony is made by an independent developer who lives with both cats and a dog — and built it after learning firsthand that introductions go better with a plan.</p>
+    <div class="facts">
+      <span class="fact">Free</span>
+      <span class="fact">iPhone</span>
+      <span class="fact">No account or sign-in</span>
+      <span class="fact">Works fully offline</span>
+      <span class="fact">Data stored only on your device</span>
+      <span class="fact">Any pairing: cat–cat, dog–dog, dog–cat</span>
+    </div>
+  </section>
+
+  <section id="guidance">
+    <div class="guidance">
+      <h2>Guidance, not training</h2>
+      <p>Paws &amp; Harmony is <strong>not a training program</strong>. It doesn't teach commands, and it doesn't replace a certified trainer, an animal behaviorist, or a veterinarian. What it offers is guidance and tracking: a calm daily structure, stage-by-stage suggestions, and a clear record of how the introduction is going — so you know what to do each day, and when it's time to ask a professional for help.</p>
+      <p class="pro-note">If a pet shows aggression or you're worried about safety, contact a veterinarian or a certified behaviorist.</p>
+    </div>
   </section>
 
   <section id="screenshots">
@@ -170,6 +225,7 @@
     <h2>For shelters &amp; rescues</h2>
     <div class="shelter-box">
       <p>The hardest part of an adoption often starts after the paperwork — a new pet meeting the pets already at home. Paws &amp; Harmony gives adopters a calm, structured first month, which supports the match you worked to make. The app is <strong>completely free</strong>, needs <strong>no account or sign-up</strong>, and keeps <strong>all data on the adopter's own phone</strong> — so it's easy to recommend and there's nothing for your team to administer.</p>
+      <p>One thing we're clear about with adopters: it's guidance and tracking for adopters — not a training program — and it points people to professionals when things get hard.</p>
       <p>
         <a class="btn btn-secondary" href="paws-flyer.pdf" download style="color:#fff">Printable flyer for adoption packets (PDF)</a>
       </p>
@@ -183,7 +239,7 @@
 
   <section id="support">
     <h2>Support</h2>
-    <p class="section-sub">Need help with the app? Email us at <a href="mailto:kissinger.cj2012@yahoo.com">kissinger.cj2012@yahoo.com</a> and we'll get back to you.</p>
+    <p class="section-sub">Need help with the app? Email us at <a href="mailto:pawsandharmony@yahoo.com">pawsandharmony@yahoo.com</a> and we'll get back to you.</p>
     <div class="faq">
       <h3>Where does my data live?</h3>
       <p>All of your data stays on your device — there are no accounts and nothing to sign into. Deleting the app removes its data.</p>
