@@ -1,14 +1,204 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paws &amp; Harmony — Support</title>
-<style>body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.6;color:#1A2B42}h1{color:#243A5E}</style></head>
+<title>Paws &amp; Harmony — Calm introductions for new pets</title>
+<meta name="description" content="Paws & Harmony is a free iPhone app that helps a newly adopted pet settle in with the pets you already have — daily check-ins, calm streaks, and stage-by-stage coaching. No accounts. No tracking.">
+<style>
+  :root{
+    --navy:#243A5E; --blue:#4A6FA5; --sky:#A9C5E8; --bg:#F4F6F8;
+    --sand:#E6DED3; --gold:#C9A84C; --ink:#1A2B42; --muted:#5C7591;
+    --card:#FFFFFF; --line:#E0E8F0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:var(--blue)}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+  /* Header */
+  header{background:var(--navy);color:#fff}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;flex-wrap:wrap;gap:10px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:20px;letter-spacing:.2px}
+  .brand svg{display:block}
+  .navlinks a{color:#DCE7F5;text-decoration:none;margin-left:20px;font-size:15px}
+  .navlinks a:hover{color:#fff;text-decoration:underline}
+  /* Hero */
+  .hero{background:linear-gradient(180deg,var(--navy) 0%,#2E4A75 100%);color:#fff;padding:8px 0 56px}
+  .hero-grid{display:flex;gap:40px;align-items:center;flex-wrap:wrap;margin-top:28px}
+  .hero-text{flex:1 1 420px;min-width:280px}
+  .hero h1{font-size:44px;line-height:1.12;margin:0 0 6px;font-weight:800}
+  .tagline{font-size:22px;color:var(--sky);margin:0 0 16px;font-weight:600}
+  .lede{font-size:17px;color:#E8EEF6;margin:0 0 28px;max-width:52ch}
+  .btn{display:inline-block;background:var(--gold);color:#243A5E;font-weight:700;text-decoration:none;padding:14px 26px;border-radius:12px;font-size:17px}
+  .btn:hover{filter:brightness(1.06)}
+  .btn-secondary{background:var(--navy)}
+  .qr-card{background:#fff;border-radius:18px;padding:20px 20px 14px;text-align:center;color:var(--ink);box-shadow:0 12px 32px rgba(0,0,0,.25);flex:0 0 auto;margin:0 auto}
+  .qr-card img{width:190px;height:190px;display:block}
+  .qr-card p{margin:10px 0 4px;font-size:14px;color:var(--muted);font-weight:600}
+  /* Sections */
+  section{padding:52px 0 8px}
+  h2{color:var(--navy);font-size:28px;margin:0 0 8px}
+  .section-sub{color:var(--muted);margin:0 0 26px;max-width:65ch}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card .dot{width:34px;height:34px;border-radius:50%;background:var(--sky);opacity:.9;display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:800;margin-bottom:12px}
+  .card h3{margin:0 0 6px;font-size:17px;color:var(--navy)}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .pairing{margin-top:22px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:10px;padding:14px 18px;color:var(--ink)}
+  /* Screenshots */
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px}
+  figure{margin:0;text-align:center}
+  figure img{width:100%;max-width:220px;border-radius:20px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(36,58,94,.12)}
+  figcaption{margin-top:8px;font-size:14px;color:var(--muted);font-weight:600}
+  /* Shelters */
+  .shelter-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+  .shelter-box p{max-width:70ch}
+  /* Privacy strip */
+  .privacy-strip{background:var(--sand);border-radius:14px;padding:22px 26px;margin-top:52px}
+  .privacy-strip strong{color:var(--navy)}
+  /* Support + footer */
+  .faq{background:#fff;border:1px solid var(--line);border-radius:14px;padding:6px 22px}
+  .faq h3{color:var(--navy);margin:18px 0 4px;font-size:16px}
+  .faq p{margin:0 0 16px;color:var(--muted)}
+  footer{margin-top:56px;background:var(--navy);color:#C9D6E8;padding:26px 0;text-align:center;font-size:14px}
+  footer a{color:#fff}
+  @media (max-width:640px){
+    .hero h1{font-size:34px}
+    .navlinks{display:none}
+    .hero{padding-bottom:40px}
+  }
+</style>
+</head>
 <body>
-<h1>Paws &amp; Harmony — Support</h1>
-<p>Paws &amp; Harmony helps you introduce a new pet to your household with daily check-ins, calm streaks, milestones, and stage-by-stage coaching.</p>
-<h2>Need help?</h2>
-<p>Email us at <a href="mailto:kissinger.cj2012@yahoo.com">kissinger.cj2012@yahoo.com</a> and we'll get back to you.</p>
-<h2>Good to know</h2>
-<p>All of your data stays on your device — there are no accounts and nothing to sign into. Deleting the app removes its data. Reminders in the app are a simple in-app list to support your routine — the app does not send device notifications.</p>
-<p><a href="privacy.html">Privacy Policy</a></p>
-</body></html>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
+        <g fill="#A9C5E8">
+          <ellipse cx="50" cy="64" rx="21" ry="17"/>
+          <ellipse cx="20" cy="42" rx="8.5" ry="12" transform="rotate(-18 20 42)"/>
+          <ellipse cx="39" cy="28" rx="8.5" ry="12" transform="rotate(-6 39 28)"/>
+          <ellipse cx="61" cy="28" rx="8.5" ry="12" transform="rotate(6 61 28)"/>
+          <ellipse cx="80" cy="42" rx="8.5" ry="12" transform="rotate(18 80 42)"/>
+        </g>
+      </svg>
+      Paws &amp; Harmony
+    </div>
+    <nav class="navlinks">
+      <a href="#how">How it works</a>
+      <a href="#shelters">For shelters</a>
+      <a href="#support">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>Paws &amp; Harmony</h1>
+      <p class="tagline">Calm introductions for new pets.</p>
+      <p class="lede">A free iPhone app that helps a newly adopted pet settle in with the pets you already have — one peaceful day at a time.</p>
+      <a class="btn" href="https://apps.apple.com/app/id6758740889">Download on the App Store</a>
+    </div>
+    <div class="qr-card">
+      <img src="assets/qr-app-store.png" alt="QR code linking to Paws & Harmony on the App Store" width="190" height="190">
+      <p>Scan to download</p>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section id="how">
+    <h2>How it works</h2>
+    <p class="section-sub">A simple daily rhythm for the first weeks together — the period that sets the tone for a multi-pet home.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="dot">1</div>
+        <h3>Set up pet profiles</h3>
+        <p>Add each of your pets — the new arrival and the residents — in a couple of minutes.</p>
+      </div>
+      <div class="card">
+        <div class="dot">2</div>
+        <h3>Daily 2-minute check-ins</h3>
+        <p>Log stress level, any incidents, and time spent together in shared space. Quick enough to do every day.</p>
+      </div>
+      <div class="card">
+        <div class="dot">3</div>
+        <h3>Calm streaks &amp; milestones</h3>
+        <p>Watch calm days build into streaks, and celebrate the milestones as your pets settle in.</p>
+      </div>
+      <div class="card">
+        <div class="dot">4</div>
+        <h3>Stage-by-stage coaching</h3>
+        <p>Practical guidance matched to each stage of the introduction, built into the app — no searching forums at midnight.</p>
+      </div>
+    </div>
+    <div class="pairing"><strong>Works for any pairing:</strong> cat-to-cat, dog-to-dog, or the classic dog-meets-cat. Every pair follows the same calm daily rhythm.</div>
+  </section>
+
+  <section id="screenshots">
+    <h2>Inside the app</h2>
+    <p class="section-sub">The five tabs an adopter uses every day.</p>
+    <div class="shots">
+      <figure>
+        <img src="assets/01-home.png" alt="Paws & Harmony Home screen showing calm streak and progress" loading="lazy">
+        <figcaption>Home</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/02-check-in.png" alt="Daily check-in screen with stress level and shared time" loading="lazy">
+        <figcaption>Check-In</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/03-coach.png" alt="Coach screen with stage-by-stage introduction guidance" loading="lazy">
+        <figcaption>Coach</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/04-pets.png" alt="Pets screen listing the household's pet profiles" loading="lazy">
+        <figcaption>Pets</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/05-progress.png" alt="Progress screen with weekly harmony view" loading="lazy">
+        <figcaption>Progress</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="shelters">
+    <h2>For shelters &amp; rescues</h2>
+    <div class="shelter-box">
+      <p>The hardest part of an adoption often starts after the paperwork — a new pet meeting the pets already at home. Paws &amp; Harmony gives adopters a calm, structured first month, which supports the match you worked to make. The app is <strong>completely free</strong>, needs <strong>no account or sign-up</strong>, and keeps <strong>all data on the adopter's own phone</strong> — so it's easy to recommend and there's nothing for your team to administer.</p>
+      <p>
+        <a class="btn btn-secondary" href="paws-flyer.pdf" download style="color:#fff">Printable flyer for adoption packets (PDF)</a>
+      </p>
+      <p style="color:var(--muted);font-size:14px;margin-bottom:0">Print it, slip it into adoption folders, or pin it by the front desk — the QR code on the flyer goes straight to the App Store page.</p>
+    </div>
+  </section>
+
+  <div class="privacy-strip">
+    <strong>Our privacy promise:</strong> No accounts. No tracking. <strong>Data Not Collected</strong> — everything stays on the phone. Read the full <a href="privacy.html">Privacy Policy</a>.
+  </div>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p class="section-sub">Need help with the app? Email us at <a href="mailto:kissinger.cj2012@yahoo.com">kissinger.cj2012@yahoo.com</a> and we'll get back to you.</p>
+    <div class="faq">
+      <h3>Where does my data live?</h3>
+      <p>All of your data stays on your device — there are no accounts and nothing to sign into. Deleting the app removes its data.</p>
+      <h3>Do the reminders send notifications?</h3>
+      <p>Reminders in the app are a simple in-app list to support your routine — the app does not send device notifications.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Paws &amp; Harmony &bull; Free &bull; iPhone &nbsp;&middot;&nbsp; <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
